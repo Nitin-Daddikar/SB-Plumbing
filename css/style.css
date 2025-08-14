@@ -1168,6 +1168,7 @@ img{
 	position:relative;
 	display:inline-block;
 	max-width:100%;
+	width: 30vh;
 }
 
 .main-header .header-upper .logo-outer{
