@@ -35,7 +35,7 @@ a,
 .shop-single .comments-area .comment .comment-inner .rating .fa,
 .products-section .content-column .inner-column h2 span,
 .news-block-three .inner-box .lower-content .lower-box h3 a:hover{
-	color:#7BC132;
+	color:#97df7e;
 }
 
 /*Background Color*/
@@ -79,7 +79,7 @@ a,
 .shop-single .product-details .prod-tabs .tab-btns .tab-btn,
 .shop-single .product-details .prod-tabs .tab-btns .tab-btn:before,
 .main-menu .navbar-header .navbar-toggle{
-	background-color:#7BC132;
+	background-color:#97df7e;
 }
 
 
@@ -126,7 +126,7 @@ a,
 .contact-form input[type="password"]:focus,
 .contact-form select:focus,
 .contact-form textarea:focus{
-	border-color:#7BC132;
+	border-color:#97df7e;
 }
 
 /*RGBA Color Light*/
@@ -134,14 +134,14 @@ a,
 /*RGBA Color Dark*/
 .call-back-section:before,
 .services-block-two .inner-box .image .content-overlay{
-	background-color:rgba(242,208,70,0.90);
+	background-color:rgba(151, 223, 126, 0.9);
 }
 
 
 @media only screen and (max-width: 767px){
 	
 	.main-menu .navbar-header .navbar-toggle{
-		border-color:#7BC132;
+		border-color:#97df7e;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li:hover > a,
@@ -149,7 +149,7 @@ a,
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
 	.main-menu .navbar-collapse > .navigation > li.current > a,
 	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
-		background:#7BC132;	
+		background:#97df7e;	
 	}
 	
 }

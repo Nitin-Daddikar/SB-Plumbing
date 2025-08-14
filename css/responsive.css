@@ -463,7 +463,7 @@
 		float:none !important;
 		margin:0px !important;
 		width:100% !important;
-		background:#246fbc;
+		background:#1B4A66;
 		border:1px solid #ffffff;
 	}
 	
@@ -510,7 +510,7 @@
 		padding:0px;
 		outline:none;
 		width:100%;
-		background:#246fbc;
+		background:#1B4A66;
 		-webkit-border-radius:0px;
 		-ms-border-radius:0px;
 		-o-border-radius:0px;
@@ -554,7 +554,7 @@
 		padding:12px 20px 10px !important;
 		line-height:22px;
 		color:#aaaaaa;
-		background:#246fbc;
+		background:#1B4A66;
 		text-align:left;
 		font-size:16px;
 	}
@@ -565,7 +565,7 @@
 	.main-menu .navbar-collapse > .navigation > li.current > a,
 	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
 		background:#f2d046;
-		color:#246fbc !important;
+		color:#1B4A66 !important;
 	}
 	
 	.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
