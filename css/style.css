@@ -16,14 +16,14 @@ a {
 
 #main_wrap {
 	float: left;
-	background-color: #;
+	
 	width: 100%;
 }
 
 header {
 	float: left;
 	width: 100%;
-	background-color: #;
+	
 	position: absolute;
 	z-index: 9999;
 }
@@ -115,7 +115,7 @@ header {
 	clear: right;
 	width: 30%;
 	height: 18px;
-	background-color: #;
+	
 	margin: 0.8% 4% 0.5% 0%;
 }
 
@@ -172,9 +172,8 @@ nav {
 	width: 100%;
 	/*height:680px;*/
 	height: auto;
-	background-color: #;
+	
 	position: relative;
-	margin-top: 2%;
 }
 
 .banner_wrap img {
@@ -247,7 +246,7 @@ nav {
 	float: left;
 	width: 100%;
 	margin: 0% 0% 3% 0%;
-	background-color: #;
+	
 }
 
 .footer_wrap {
@@ -263,14 +262,14 @@ nav {
 .footer_wrap1 {
 	float: left;
 	width: 92%;
-	background-color: #;
+	
 	margin: 0.5% 4% 0% 4%;
 }
 
 .footer_box1 {
 	float: left;
 	width: 22%;
-	background-color: #;
+	
 	margin: 1% 0% 1% 0%;
 }
 
@@ -278,7 +277,7 @@ nav {
 .footer_box2 p a {
 	float: left;
 	width: 100%;
-	background-color: #;
+	
 	line-height: 25px;
 	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
@@ -291,7 +290,7 @@ nav {
 .footer_box2 {
 	float: left;
 	width: 22%;
-	background-color: #;
+	
 	margin: 1% 0% 1% 4%;
 }
 
@@ -310,7 +309,7 @@ nav {
 .footer_box3 {
 	float: left;
 	width: 22%;
-	background-color: #;
+	
 	margin: 1% 0% 1% 4%;
 }
 
@@ -324,7 +323,7 @@ height: 25px;}*/
 .footer_box3 p {
 	float: left;
 	width: 100%;
-	background-color: #;
+	
 	line-height: 18px;
 	padding: 1.5% 0%;
 	color: #ffffff;
@@ -336,7 +335,7 @@ height: 25px;}*/
 .footer_box4 {
 	float: left;
 	width: 22%;
-	background-color: #;
+	
 	margin: 1% 0% 1% 4%;
 	padding-bottom: 1%;
 }
@@ -351,7 +350,7 @@ height: 25px;}*/
 .footer_heading {
 	float: left;
 	width: 100%;
-	background-color: #;
+	
 	padding: 0% 0% 1.5% 0%;
 	margin-bottom: 4%;
 	color: #ffffff;
@@ -375,7 +374,7 @@ footer {
 	float: left;
 	width: 40%;
 	margin: 0% 0% 0% 7%;
-	background-color: #;
+	
 }
 
 .footer_left p {
@@ -389,7 +388,7 @@ footer {
 	float: right;
 	width: auto;
 	margin: 0% 7% 0% 0%;
-	background-color: #;
+	
 }
 
 .footer_right p {
@@ -444,7 +443,7 @@ footer {
 	margin:1% 10% 0% 10%;*/
 	width: 84%;
 	margin: 1% 8% 0% 8%;
-	background-color: #;
+	
 }
 
 .in_con_wrap {
@@ -588,7 +587,7 @@ footer {
 	height: auto;
 	float: left;
 	margin: 1.5% 4% 2% 0%;
-	background-color: #;
+	
 	-moz-box-shadow: 2px 2px 8px -2px #000;
 	-webkit-box-shadow: 2px 2px 8px -2px #000;
 	box-shadow: 2px 2px 8px -2px #000;
@@ -611,7 +610,7 @@ footer {
 	height: auto;
 	float: left;
 	margin: 1.5% 4% 2% 0%;
-	background-color: #;
+	
 	-moz-box-shadow: 2px 2px 8px -2px #000;
 	-webkit-box-shadow: 2px 2px 8px -2px #000;
 	box-shadow: 2px 2px 8px -2px #000;
@@ -634,7 +633,7 @@ footer {
 	height: auto;
 	float: left;
 	margin: 1.5% 2% 2% 2%;
-	background-color: #;
+	
 	-moz-box-shadow: 2px 2px 8px -2px #000;
 	-webkit-box-shadow: 2px 2px 8px -2px #000;
 	box-shadow: 2px 2px 8px -2px #000;
@@ -658,7 +657,7 @@ footer {
 	height: auto;
 	float: left;
 	margin: 1.5% 0% 2% 0%;
-	background-color: #;
+	
 	-moz-box-shadow: 2px 2px 8px -2px #000;
 	-webkit-box-shadow: 2px 2px 8px -2px #000;
 	box-shadow: 2px 2px 8px -2px #000;
@@ -680,7 +679,7 @@ footer {
 	float: left;
 	width: 23%;
 	margin: 0% 1%;
-	background-color: #;
+	
 }
 
 .gal_col_box1 {
@@ -850,7 +849,7 @@ footer {
 .map_wrap {
 	float: left;
 	width: 96%;
-	background-color: #;
+	
 	margin: 1% 2%;
 }
 
@@ -882,13 +881,13 @@ footer {
 	float: left;
 width: 30%;
 margin: 4% 35% 8% 35%;
-background-color: #;}*/
+}*/
 
 .ser_fig {
 	float: left;
 	width: 20%;
 	margin: 8% 2% 8% 2%;
-	background-color: #;
+	
 }
 
 .ser_fig img {
@@ -1290,7 +1289,7 @@ line-height: normal;}*/
 		float: left;
 		width: 20%;
 		margin: 8% 40% 8% 40%;
-		background-color: #;
+		
 	}
 
 	.ser_txt {
@@ -1444,7 +1443,7 @@ line-height: normal;}*/
 	.footer_box1 {
 		float: left;
 		width: 100%;
-		background-color: #;
+		
 		margin: 1% 0% 1% 0%;
 	}
 
@@ -1460,21 +1459,21 @@ line-height: normal;}*/
 	.footer_box2 {
 		float: left;
 		width: 98%;
-		background-color: #;
+		
 		margin: 1% 0% 1% 1%;
 	}
 
 	.footer_box3 {
 		float: left;
 		width: 96%;
-		background-color: #;
+		
 		margin: 1% 0% 1% 2%;
 	}
 
 	.footer_box4 {
 		float: left;
 		width: 96%;
-		background-color: #;
+		
 		margin: 1% 0% 1% 2%;
 		padding-bottom: 1%;
 	}
@@ -1483,14 +1482,14 @@ line-height: normal;}*/
 		float: left;
 		width: 81%;
 		margin: 0% 0% 0% 12%;
-		background-color: #;
+		
 	}
 
 	.footer_right {
 		float: right;
 		width: auto;
 		margin: 0% 25% 0% 0%;
-		background-color: #;
+		
 	}
 
 	.home_txt {
@@ -1748,7 +1747,7 @@ line-height: normal;}*/
 		float: left;
 		width: 75%;
 		margin: 0% 13.5%;
-		background-color: #;
+		
 	}
 
 	.gal_lg_box,
