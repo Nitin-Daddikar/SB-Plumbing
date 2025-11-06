@@ -25,7 +25,7 @@
 }
 
 
-.ch-grid li > div {
+.ch-grid li>div {
 	flex: 1;
 }
 
@@ -39,8 +39,8 @@
 
 	.ch-grid li {
 		float: left;
-		width: 89px;
-		height: 89px;
+		width: 125px;
+		/* height: 125px; */
 		max-width: 100%;
 		max-height: 13%;
 		display: inline-block;
@@ -57,5 +57,75 @@
 		margin: 1% 2.3% 1% 2.3%;
 		margin: 1% 5% 1% 5%;
 		display: none;
+	}
+}
+
+
+/* Carousel viewport */
+.services-carousel {
+	position: relative;
+	margin: 1.5em 0 2em;
+}
+
+.services-carousel .carousel-viewport {
+	overflow: hidden;
+}
+
+/* Make the services list a horizontal flex row */
+#services-list {
+	display: flex;
+	gap: 25px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	transition: transform 400ms ease;
+	will-change: transform;
+}
+
+#services-list li {
+	box-sizing: border-box;
+	flex: 0 0 auto;
+	text-align: center;
+	background: transparent;
+}
+
+/* Controls */
+.carousel-control {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	border: none;
+	padding: 0.45em 0.6em;
+	cursor: pointer;
+	z-index: 20;
+	border-radius: 3px;
+}
+
+.carousel-control:focus {
+	outline: none
+}
+
+.carousel-prev {
+	left: 6px;
+}
+
+.carousel-next {
+	right: 6px;
+}
+
+/* Small responsive tweaks */
+@media (max-width: 900px) {
+	/* #services-list li { min-width: 180px; } */
+}
+
+@media (max-width: 600px) {
+	#services-list li {
+		min-width: 140px;
+	}
+
+	.carousel-control {
+		padding: 0.35em 0.45em;
 	}
 }

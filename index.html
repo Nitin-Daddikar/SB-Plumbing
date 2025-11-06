@@ -102,13 +102,10 @@
                         <img src="images/banner2.jpg" data-thumb="images/banner/banner2.jpg"
                             alt="Corporate Interior Designer">
                         <img src="images/banner3.jpg" data-thumb="images/banner/banner3.jpg"
-                            alt="Office Interior Designer" data-transition="slideInLeft">
-
+                            alt="Office Interior Designer">
                         <img src="images/banner4.jpg" data-thumb="images/banner/banner4.jpg"
-                            alt="Office Interior Designer" data-transition="slideInLeft">
-
+                            alt="Office Interior Designer">
                     </div>
-
                 </div>
             </div>
             <script src="js/jquery.min.js"></script>
@@ -166,7 +163,7 @@
             <section class="con2">
                 <h2 class="heading">SERVICES</h2>
                 <div class="ser_icon">
-                    <ul class="ch-grid">
+                    <ul id="services-list" class="ch-grid">
                         <li>
                             <div>
                                 <div class="ch-item ch-img-1">
@@ -237,19 +234,6 @@
                                     <div class="ch-info">
                                         <h3><a href="service.html"><img src="images/icon_sound1.png"
                                                     alt="Solar Water Heater Installation"></a></h3>
-                                    </div>
-                                </div>
-                                <p class="ser_heading" style="color: #000000;">Solar Water Heater Installation</p>
-                            </div>
-                        </li><span><img src="images/hr_line.png" alt=""></span>
-
-                        <li>
-                            <div>
-                                <div class="ch-item ch-img-7">
-                                    <div class="ch-info">
-                                        <h3><a href="service.html"><img src="images/icon_painting1.png"
-                                                    alt="Solar Water Heater Installation"></a></h3>
-
                                     </div>
                                 </div>
                                 <p class="ser_heading" style="color: #000000;">Solar Water Heater Installation</p>
@@ -340,10 +324,10 @@
                     and workmanship.
                     <br><br>
                 </p>
-                    <p class="sub_head2">At SB Plumbing Solutions, we don’t just complete projects—we build trust
-                        through
-                        quality,
-                        reliability, and a commitment to long-term customer relationships.</p>
+                <p class="sub_head2">At SB Plumbing Solutions, we don’t just complete projects—we build trust
+                    through
+                    quality,
+                    reliability, and a commitment to long-term customer relationships.</p>
             </section>
 
         </div>
@@ -351,6 +335,99 @@
         <div id="footer"><!-- Footer content will be loaded here --></div>
 
     </div>
+
+    <!-- Services carousel behaviour (jQuery) -->
+    <script>
+        (function ($) {
+            $(function () {
+                var $list = $('#services-list');
+                if (!$list.length) return;
+
+                // Wrap list in viewport and add controls
+                if (!$list.parent().hasClass('carousel-viewport')) {
+                    $list.wrap('<div class="services-carousel"><div class="carousel-viewport"></div></div>');
+                    $('.services-carousel').append('<button class="carousel-control carousel-prev" aria-label="Previous">‹</button>');
+                    $('.services-carousel').append('<button class="carousel-control carousel-next" aria-label="Next">›</button>');
+                }
+
+                var $viewport = $list.closest('.carousel-viewport');
+                var position = 0;
+                var itemW = $list.find('li').outerWidth(true) || 220;
+
+                function updateItemWidth() {
+                    // recalc item width (responsive)
+                    itemW = $list.find('li').outerWidth(true) || 220;
+                }
+
+                function visibleCount() {
+                    var vpw = $viewport.width();
+                    return Math.max(1, Math.floor(vpw / itemW));
+                }
+
+                function clampPosition(pos) {
+                    var total = $list.find('li').length;
+                    var maxPos = Math.max(0, total - visibleCount());
+                    if (pos < 0) pos = 0;
+                    if (pos > maxPos) pos = maxPos;
+                    return pos;
+                }
+
+                function slideTo(pos, animate) {
+                    pos = clampPosition(pos);
+                    position = pos;
+                    var x = -(position * itemW);
+                    if (animate) $list.css('transition', 'transform 400ms ease');
+                    else $list.css('transition', 'none');
+                    $list.css('transform', 'translateX(' + x + 'px)');
+                }
+
+                // Prev/Next handlers
+                $('.carousel-prev').on('click', function () {
+                    slideTo(position - 1, true);
+                });
+                $('.carousel-next').on('click', function () {
+                    slideTo(position + 1, true);
+                });
+
+                // Autoplay
+                var autoplay = true;
+                var autoplayDelay = 3500;
+                var autoplayTimer = null;
+
+                function startAutoplay() {
+                    if (!autoplay) return;
+                    stopAutoplay();
+                    autoplayTimer = setInterval(function () {
+                        var total = $list.find('li').length;
+                        var maxPos = Math.max(0, total - visibleCount());
+                        var next = position >= maxPos ? 0 : position + 1;
+                        slideTo(next, true);
+                    }, autoplayDelay);
+                }
+                function stopAutoplay() { if (autoplayTimer) { clearInterval(autoplayTimer); autoplayTimer = null; } }
+
+                // Pause on hover
+                $viewport.on('mouseenter', stopAutoplay).on('mouseleave', startAutoplay);
+
+                // Handle window resize
+                var resizeTimer = null;
+                $(window).on('resize', function () {
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(function () {
+                        updateItemWidth();
+                        slideTo(clampPosition(position), false);
+                    }, 150);
+                });
+
+                // Initial setup
+                // Remove existing separator spans that break flex layout (keeps semantics if present)
+                $list.find('span').remove();
+                updateItemWidth();
+                slideTo(0, false);
+                startAutoplay();
+            });
+        })(jQuery);
+    </script>
 
 </body>
 
