@@ -73,11 +73,11 @@
 }
 #cssmenu > ul > li > a {
   padding: 20px;
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   /*color: #000000;*/
-  color:#222222;
+  color:#a35139;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -87,8 +87,7 @@
 
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
-  /*color: #009ae1;*/
-  color:#202020;
+  color:#2c3b4d;
  
 }
 
@@ -164,7 +163,7 @@
 }
 #cssmenu ul ul li {
   height: 0;
-  border-top: 1px solid #7c7c7c;
+  border-top: 1px solid #C9C1B1;
   -webkit-transition: height .2s ease;
   -moz-transition: height .2s ease;
   -ms-transition: height .2s ease;
@@ -181,9 +180,9 @@
  line-height:15px;
    width: 200px;
   font-size: 13px;
-  background: #154a68;
+  background: #C9C1B1;
   text-decoration: none;
-  color: #ffffff;
+  color: #1B2632;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -192,7 +191,7 @@
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #ffffff;
+  color: #FFF;
 }
 /*#cssmenu ul ul li.has-sub > a::after {
   position: absolute;
@@ -257,11 +256,9 @@
 
 #cssmenu > ul > li > a {
   padding: 17px;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  /*color: #000000;*/
-  color:#222222;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -274,11 +271,9 @@
 
 #cssmenu > ul > li > a {
   padding: 14px;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  /*color: #000000;*/
-  color:#222222;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -329,11 +324,9 @@
 
 #cssmenu > ul > li > a {
   padding: 11px;
-  font-size: 11px;
+  font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
-  /*color: #000000;*/
-  color:#222222;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -524,10 +517,9 @@
 
 #cssmenu > ul > li > a {
     padding: 11px;
-    font-size: 11px;
+    font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #202020;
     transition: color 0.2s ease 0s;
 }
 

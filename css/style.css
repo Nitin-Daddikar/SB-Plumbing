@@ -8,6 +8,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background: #EEE9DF;
 }
 
 a {
@@ -185,20 +186,18 @@ nav {
 .main_content {
 	float: left;
 	width: 100%;
-	background-color: #ffffff;
 }
 
 .con1 {
 	float: left;
 	width: 92%;
-	background-color: #ffffff;
 	margin: 2% 4% 0% 4%;
 }
 
 .con1 a {
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
-	color: #154a68;
+	color: #C9C1B1;
 	text-decoration: underline;
 }
 
@@ -253,7 +252,6 @@ nav {
 .con2 {
 	float: left;
 	width: 92%;
-	background-color: #ffffff;
 	margin: 2% 4% 2% 4%;
 }
 
@@ -417,7 +415,6 @@ footer {
 .in_main_head {
 	float: left;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.9);
 	position: relative;
 	z-index: 1;
 
@@ -427,7 +424,6 @@ footer {
 	float: left;
 	width: 100%;
 	height: auto;
-	background: url(../images/aboutus_bg.jpg) no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -447,15 +443,14 @@ footer {
 .breadcrumbs_wrap {
 	float: left;
 	width: 100%;
-	background-color: rgba(77, 74, 70, 0.6);
+	background-color: #A35139;
 }
 
 .breadcrumbs_wrap p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	color: #ffffff;
 	padding: 0.3% 0% 0.3% 4%;
-	font-weight: 600;
 }
 
 .in_con_main {
@@ -463,8 +458,13 @@ footer {
 	/*width:80%;
 	margin:1% 10% 0% 10%;*/
 	width: 84%;
-	margin: 1% 8% 0% 8%;
+	padding: 1% 8% 0% 8%;
+}
 
+.in_con_main:not(.gallery_in_con_main) {
+	background: url(../images/aboutus_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .in_abt_wrap {
@@ -537,11 +537,7 @@ footer {
 	float: left;
 	width: 100%;
 	margin: 1% 0% 0% 0%;
-	background: rgb(255, 255, 255);
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(228, 211, 180, 0.7) 100%);
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(228, 211, 180, 0.7) 100%);
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(228, 211, 180, 0.7) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#edd9b6', GradientType=0);
+	background: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -559,7 +555,6 @@ footer {
 	width: 100%;
 
 	height: auto;
-	background: url(../images/projects_bg.jpg) no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -583,7 +578,7 @@ footer {
 	width: 100%;
 	height: auto;
 	/*background:url(images/inner_img/gallery_bg.jpg) no-repeat;*/
-	background: url(../images/gallery_bg1.jpg) no-repeat;
+	/* background: url(../images/gallery_bg1.jpg) no-repeat; */
 	background-size: cover;
 	position: relative;
 }
@@ -731,7 +726,7 @@ footer {
 	margin: 0% 0% 20px 0%;
 	height: 322px;
 	max-height: 100%;
-	background-color: yellow;
+	background-color: #EEE9DF;
 	border: 1px solid #806015;
 }
 
@@ -764,7 +759,6 @@ footer {
 	float: left;
 	width: 100%;
 	height: auto;
-	background: url(../images/contactus_bg.jpg) no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -878,7 +872,6 @@ footer {
 	float: left;
 	width: 100%;
 	height: auto;
-	background: url(../images/services_bg.jpg) no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -1031,10 +1024,10 @@ line-height: normal;}*/
 	text-align: center;
 	width: auto;
 	border: none;
-	background-color: #154a68;
+	background-color: #C9C1B1;
 	font-size: 16px;
 	text-align: center;
-	color: #282727;
+	color: #1B2632;
 	padding: 0.6% 4% 0.6% 4%;
 	margin: 0% 0% 5% 0%;
 	font-weight: 600;
@@ -1256,7 +1249,7 @@ line-height: normal;}*/
 	/* 800px about page style*/
 	.breadcrumbs_wrap p {
 
-		font-size: 12px;
+		font-size: 15px;
 		color: #FFF;
 		padding: 0.5% 0% 0.5% 4%;
 		font-weight: 600;
@@ -1564,7 +1557,7 @@ line-height: normal;}*/
 	}
 
 	.breadcrumbs_wrap p {
-		font-size: 11px;
+		font-size: 12px;
 	}
 
 	/*airport page style*/
