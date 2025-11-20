@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #EEE9DF;
+	background: #EEE9DF !important;
 }
 
 a {
@@ -461,10 +461,14 @@ footer {
 	padding: 1% 8% 0% 8%;
 }
 
-.in_con_main:not(.gallery_in_con_main) {
+.in_con_main:not(.special_in_con_main) {
 	background: url(../images/aboutus_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.w-100 {
+	width: 100%;
 }
 
 .in_abt_wrap {
@@ -1625,7 +1629,6 @@ line-height: normal;}*/
 		float: left;
 		width: 100%;
 		height: 2743px;
-		background: transparent url("../images/projects_bg.jpg") no-repeat scroll 0% 0% / cover;
 		position: relative;
 	}
 
@@ -1673,7 +1676,6 @@ line-height: normal;}*/
 		width: 100%;
 
 		height: auto;
-		background: url(../images/projects_bg.jpg) no-repeat;
 		background-size: cover;
 		position: relative;
 	}
